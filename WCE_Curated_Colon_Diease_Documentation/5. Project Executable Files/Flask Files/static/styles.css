@@ -1,0 +1,279 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../static/images/homepage.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.inspect-btn {
+    background: transparent;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.inspect-btn:hover {
+    background: #FFD700;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent background for better readability */
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Adding a darker semi-transparent background for better readability */
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #FFD700; /* Highlighting the main title */
+}
+
+.content p {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background: #FFD700;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: white;
+    color: #FFD700;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.result h2 {
+    font-size: 36px;
+    color: #FFD700;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+/* new for about us */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+/* contact */
+/* for contact */
+.team-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.team-section h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.team-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #FFD700;
+}
+
+.team-member a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-details, .contact-form {
+        flex-basis: 100%;
+    }
+
+    .team-table td {
+        padding: 5px;
+    }
+}

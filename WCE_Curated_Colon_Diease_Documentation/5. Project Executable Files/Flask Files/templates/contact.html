@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CONTACT US</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('predict') }}">Predict</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="open navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <table class="team-table">
+                <tr class="team-member">
+                    <td>Srinath U</td>
+                    <td><a href="https://www.linkedin.com/in/srinath-u-26ba0b226" target="_blank">LinkedIn</a></td>
+                </tr>
+                <tr class="team-member">
+                    <td>Homasri Mandyam</td>
+                    <td><a href="https://www.linkedin.com/in/homasri-mandyam-2a804a314" target="_blank">LinkedIn</a></td>
+                </tr>
+                <tr class="team-member">
+                    <td>Vanshika Agrawal</td>
+                    <td><a href="https://linkedin.com/in/vanshika-agrawal-908b3b2aa" target="_blank">LinkedIn</a></td>
+                </tr>
+                <tr class="team-member">
+                    <td>Prashant Choudary</td>
+                    <td><a href="https://linkedin.com/in/prashant-choudhary-b05a15265" target="_blank">LinkedIn</a></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
