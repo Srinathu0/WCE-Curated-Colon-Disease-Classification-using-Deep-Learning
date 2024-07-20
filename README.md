@@ -77,8 +77,10 @@ python app.py
 ```
 
 ## Screenshots
-
-![App Screenshot](static/images/homepage.jpg)
+![image](https://github.com/user-attachments/assets/dd2a0701-4a95-43c5-ab2a-0a5444694fc3)
+![image](https://github.com/user-attachments/assets/612b036b-5384-4dad-80fa-d02db21889ad)
+![image](https://github.com/user-attachments/assets/3e14cd75-b095-40b0-800f-a1bcaa8d26d1)
+![image](https://github.com/user-attachments/assets/656c5bad-e7ab-447e-b379-cf1e80ccde03)
 
 ## 🔗 Contributors :
 - Srinath U:  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srinath-u-26ba0b226)
