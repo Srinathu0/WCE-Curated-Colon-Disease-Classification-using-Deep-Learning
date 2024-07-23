@@ -17,7 +17,7 @@ This project focuses on building a machine learning model to classify images rel
 
 1. Clone the Repository:
 ```
-git clone https://github.com/yourusername/CURATED_COLON-DISEASE.git
+git clone https://github.com/Srinathu0/WCE-Curated-Colon-Disease-Classification-using-Deep-Learning
 cd CURATED_COLON-DISEASE
 ```
 2. Create a Virtual Environment:
